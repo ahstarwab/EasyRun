@@ -29,12 +29,20 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func doExecuteOtherApp(_ sender: UIButton) {
-        //openKakao()
+    @IBAction func doExecuteCall(_ sender: UIButton) {
+        openCall()
+    }
+    
+    @IBAction func doExecuteMessage(_ sender: UIButton) {
+        openMessenger()
+    }
+    
+    @IBAction func doExecuteMap(_ sender: UIButton) {
         openMaps()
-        //test()
-        //openMessenger()
-        //openGoogleWebsite()
+    }
+    
+    @IBAction func doExecuteAppstore(_ sender: UIButton) {
+            openAppstore()
     }
     
     func openKakao() {
@@ -61,7 +69,47 @@ class ViewController: UIViewController {
     }
     
     func openMessenger(){
-        let myUrl = "sms:01066123943"
+        let myUrl = "sms:"
+        
+        if let url = URL(string: "\(myUrl)") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
+    
+    @IBAction func doExecuteFacetime(_ sender: UIButton) {
+        openFacetime()
+    }
+    
+    @IBAction func doExecuteCalander(_ sender: UIButton) {
+        openCalender()
+    }
+    
+    func openFacetime(){
+        let myUrl = "facetime:"
+        
+        if let url = URL(string: "\(myUrl)") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
+    
+    func openAppstore(){
+        let myUrl = ""
+        
+        if let url = URL(string: "\(myUrl)") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
+    
+    func openCalender(){
+        let myUrl = ""
+        
+        if let url = URL(string: "\(myUrl)") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
+    
+    func openCall(){
+        let myUrl = "tel:"
         
         if let url = URL(string: "\(myUrl)") {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)

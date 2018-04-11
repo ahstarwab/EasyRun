@@ -18,16 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1W-IE-grm">
-                                <rect key="frame" x="40" y="220" width="305" height="30"/>
-                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="doExecuteOtherApp:" destination="BYZ-38-t0r" eventType="touchDown" id="tjM-V5-tG2"/>
-                                </connections>
-                            </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Mp1-Pu-1gj">
                                 <rect key="frame" x="30" y="600" width="315" height="37"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -36,15 +26,72 @@
                                     <segue destination="jbZ-hR-Phn" kind="show" id="IZ1-Yl-R94"/>
                                 </connections>
                             </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4V-6z-70c">
+                                <rect key="frame" x="30" y="107" width="86" height="106"/>
+                                <state key="normal" title="Button" image="map"/>
+                                <connections>
+                                    <action selector="doExecuteMap:" destination="BYZ-38-t0r" eventType="touchDown" id="1yd-XU-mm3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSG-KG-fqz">
+                                <rect key="frame" x="30" y="413" width="82" height="108"/>
+                                <state key="normal" title="Button" image="message"/>
+                                <connections>
+                                    <action selector="doExecuteMessage:" destination="BYZ-38-t0r" eventType="touchDown" id="w0h-u0-y1E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxc-dP-fjH">
+                                <rect key="frame" x="253" y="415" width="89" height="106"/>
+                                <state key="normal" title="Button" image="call"/>
+                                <connections>
+                                    <action selector="doExecuteCall:" destination="BYZ-38-t0r" eventType="touchDown" id="UP3-Yl-MRQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggh-3m-juR">
+                                <rect key="frame" x="30" y="248" width="86" height="114"/>
+                                <state key="normal" title="Button" image="Appstore"/>
+                                <connections>
+                                    <action selector="doExecuteAppstore:" destination="BYZ-38-t0r" eventType="touchDown" id="Wps-6w-qKm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBp-D9-O7O">
+                                <rect key="frame" x="259" y="107" width="77" height="106"/>
+                                <state key="normal" title="Button" image="calander"/>
+                                <connections>
+                                    <action selector="doExecuteCalander:" destination="BYZ-38-t0r" eventType="touchDown" id="847-cd-kbQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXO-d1-9sC">
+                                <rect key="frame" x="259" y="254" width="83" height="108"/>
+                                <state key="normal" title="Button" image="facetime"/>
+                                <connections>
+                                    <action selector="doExecuteFacetime:" destination="BYZ-38-t0r" eventType="touchDown" id="mTz-en-QI0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="O1W-IE-grm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="9B2-oE-2yf"/>
+                            <constraint firstItem="ggh-3m-juR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="2Ro-0o-1VS"/>
+                            <constraint firstItem="vBp-D9-O7O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="87" id="4Ij-jr-IFU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zXO-d1-9sC" secondAttribute="trailing" constant="33" id="84z-wT-oJp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ggh-3m-juR" secondAttribute="trailing" constant="259" id="Ar9-UT-y1F"/>
+                            <constraint firstItem="gxc-dP-fjH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="395" id="LB0-nP-0dl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vBp-D9-O7O" secondAttribute="trailing" constant="39" id="LFQ-ok-0HX"/>
+                            <constraint firstItem="d4V-6z-70c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="NV1-RW-fIK"/>
+                            <constraint firstItem="zXO-d1-9sC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="234" id="OIp-Jz-aJq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mp1-Pu-1gj" secondAttribute="trailing" constant="30" id="SN9-ga-o5C"/>
-                            <constraint firstItem="O1W-IE-grm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="SYd-1R-Dtf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O1W-IE-grm" secondAttribute="trailing" constant="30" id="U5B-ro-PKJ"/>
+                            <constraint firstItem="d4V-6z-70c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="87" id="ZCR-we-tdq"/>
                             <constraint firstItem="Mp1-Pu-1gj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="a1t-WE-a4l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d4V-6z-70c" secondAttribute="trailing" constant="259" id="bEO-Sl-eqD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gxc-dP-fjH" secondAttribute="trailing" constant="33" id="hBS-5G-i24"/>
+                            <constraint firstItem="gSG-KG-fqz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="iJx-EV-eww"/>
+                            <constraint firstItem="gSG-KG-fqz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="393" id="lTy-ml-8Yx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mp1-Pu-1gj" secondAttribute="bottom" constant="30" id="lsq-f8-VXi"/>
+                            <constraint firstItem="vBp-D9-O7O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="259" id="o3f-SA-aaj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gSG-KG-fqz" secondAttribute="trailing" constant="263" id="q30-re-wxU"/>
+                            <constraint firstItem="zXO-d1-9sC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="259" id="qjU-QF-4fC"/>
+                            <constraint firstItem="ggh-3m-juR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="228" id="uXg-Rq-ny2"/>
+                            <constraint firstItem="gxc-dP-fjH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="253" id="ynp-kR-adL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -105,6 +152,14 @@
             <point key="canvasLocation" x="80.799999999999997" y="33.733133433283363"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Appstore" width="86" height="114"/>
+        <image name="calander" width="78" height="106"/>
+        <image name="call" width="82" height="106"/>
+        <image name="facetime" width="78" height="108"/>
+        <image name="map" width="84" height="106"/>
+        <image name="message" width="80" height="108"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="IZ1-Yl-R94"/>
         <segue reference="Nn8-x2-I9W"/>

@@ -288,7 +288,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.sogang.cscp2.kkk.prof.EasyRun;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.sogang.cscp2.kkkk.prof.EasyRun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,7 +307,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.sogang.cscp2.kkk.prof.EasyRun;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.sogang.cscp2.kkkk.prof.EasyRun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
