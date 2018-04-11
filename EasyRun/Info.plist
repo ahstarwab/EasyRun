@@ -18,7 +18,7 @@
 	<string>1.0</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
-		<string>comapplemaps://</string>
+		<string>kakaotalk</string>
 		<dict/>
 	</array>
 	<key>CFBundleVersion</key>

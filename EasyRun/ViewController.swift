@@ -23,12 +23,13 @@ class ViewController: UIViewController {
     @IBAction func doExecuteOtherApp(_ sender: UIButton) {
         //openKakao()
         openMaps()
+        //test()
         //openMessenger()
         //openGoogleWebsite()
     }
     
     func openKakao() {
-        let kakaoStory = "kakaostory://"
+        let kakaoStory = "kakaotalk://"
         let kakaoStoryURL = NSURL(string: kakaoStory)
         
         if UIApplication.shared.canOpenURL(kakaoStoryURL! as URL) {
@@ -39,8 +40,19 @@ class ViewController: UIViewController {
         }
     }
     
+    func test(){
+        let alert = UIAlertController(title: "Error..!", message: "", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+        let settings = UIAlertAction(title: "settings", style: .default, handler: { (action) -> Void in
+            UIApplication.shared.open(URL(string:"App-Prefs:root=GENERAL")!, options: [:], completionHandler: nil)
+        })
+        
+        alert.addAction(settings)
+        self.present(alert,animated: true, completion: nil)
+    }
+    
     func openMessenger(){
-        let myUrl = "sms:"
+        let myUrl = "sms:01066123943"
         
         if let url = URL(string: "\(myUrl)") {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
@@ -49,8 +61,8 @@ class ViewController: UIViewController {
     
     func openMaps() {
         //let myUrl = "http://maps.apple.com/?q=newyork"
-        //let myUrl = "http://maps.apple.com/?q"
-        let myUrl = "comapplemaps://"
+        let myUrl = "http://maps.apple.com/?q"
+        //let myUrl = "comapplemaps://"
         
         if let url = URL(string: "\(myUrl)") {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
