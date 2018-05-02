@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3313B1E207F722D005FD879 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3313B1D207F722D005FD879 /* ViewController2.swift */; };
 		D3FE78BF207501A50073CD75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FE78BE207501A50073CD75 /* AppDelegate.swift */; };
 		D3FE78C1207501A50073CD75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FE78C0207501A50073CD75 /* ViewController.swift */; };
 		D3FE78C4207501A50073CD75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3FE78C2207501A50073CD75 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D3313B1D207F722D005FD879 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		D3FE78BB207501A50073CD75 /* EasyRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3FE78BE207501A50073CD75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3FE78C0207501A50073CD75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				D3FE78BE207501A50073CD75 /* AppDelegate.swift */,
 				D3FE78C0207501A50073CD75 /* ViewController.swift */,
+				D3313B1D207F722D005FD879 /* ViewController2.swift */,
 				D3FE78C2207501A50073CD75 /* Main.storyboard */,
 				D3FE78C5207501A70073CD75 /* Assets.xcassets */,
 				D3FE78C7207501A70073CD75 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				D3FE78C1207501A50073CD75 /* ViewController.swift in Sources */,
 				D3FE78BF207501A50073CD75 /* AppDelegate.swift in Sources */,
+				D3313B1E207F722D005FD879 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +292,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.sogang.cscp2.kkkk.prof.EasyRun;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.sogang.cscp2.kk.prof.EasyRun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,7 +311,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.sogang.cscp2.kkkk.prof.EasyRun;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.sogang.cscp2.kk.prof.EasyRun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

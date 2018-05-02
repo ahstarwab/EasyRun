@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         pageControl.pageIndicatorTintColor = UIColor.gray
-        pageControl.currentPageIndicatorTintColor = UIColor.white
+        pageControl.currentPageIndicatorTintColor = UIColor.darkGray
         
     }
 
@@ -69,7 +69,7 @@ class ViewController: UIViewController {
     }
     
     func openMessenger(){
-        let myUrl = "sms:"
+        let myUrl = "sms://01066123943"
         
         if let url = URL(string: "\(myUrl)") {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
@@ -85,7 +85,7 @@ class ViewController: UIViewController {
     }
     
     func openFacetime(){
-        let myUrl = "facetime:"
+        let myUrl = "facetime://01066123943"
         
         if let url = URL(string: "\(myUrl)") {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
@@ -93,7 +93,7 @@ class ViewController: UIViewController {
     }
     
     func openAppstore(){
-        let myUrl = ""
+        let myUrl = "kakaotalk://"
         
         if let url = URL(string: "\(myUrl)") {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
@@ -101,7 +101,7 @@ class ViewController: UIViewController {
     }
     
     func openCalender(){
-        let myUrl = ""
+        let myUrl = "fb://profile"
         
         if let url = URL(string: "\(myUrl)") {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
@@ -109,7 +109,7 @@ class ViewController: UIViewController {
     }
     
     func openCall(){
-        let myUrl = "tel:"
+        let myUrl = "tel://01066123943"
         
         if let url = URL(string: "\(myUrl)") {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
