@@ -1,45 +1,47 @@
 //
-//  ViewController2.swift
+//  ThirdViewController.swift
 //  EasyRun
 //
-//  Created by sgcs on 2018. 4. 12..
+//  Created by sgcs on 2018. 5. 3..
 //  Copyright © 2018년 sgcs. All rights reserved.
 //
 
 import UIKit
 
-class ViewController2: UIViewController {
+class ThirdViewController: UIViewController {
 
     
-    @IBOutlet var pageControl: UIPageControl!
-    
     @IBOutlet var imgView: UIImageView!
-    
     
     
     var lastPoint: CGPoint!
     var lineSize:CGFloat = 5.0
     var lineColor = UIColor.gray.cgColor
     var touchcount = 0
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        pageControl.pageIndicatorTintColor = UIColor.gray
-        pageControl.currentPageIndicatorTintColor = UIColor.darkGray
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first! as UITouch
         
         lastPoint = touch.location(in: imgView)
     }
+    
+    
+    
+    
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         UIGraphicsBeginImageContext(imgView.frame.size)
         UIGraphicsGetCurrentContext()?.setStrokeColor(lineColor)
@@ -60,6 +62,9 @@ class ViewController2: UIViewController {
         
         lastPoint = currPoint
     }
+    
+    
+    
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         UIGraphicsBeginImageContext(imgView.frame.size)
@@ -84,18 +89,5 @@ class ViewController2: UIViewController {
         }
     }
     
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    @IBAction func pageChanged(_ sender: UIPageControl) {
-    }
     
 }
