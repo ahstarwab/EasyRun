@@ -1,15 +1,17 @@
 //
-//  SecondViewController.swift
+//  AddViewController.swift
 //  EasyRun
 //
-//  Created by sgcs on 2018. 5. 3..
+//  Created by sgcs on 2018. 5. 7..
 //  Copyright © 2018년 sgcs. All rights reserved.
 //
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class AddViewController: UIViewController {
 
+    @IBOutlet var tfAddItem: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +23,9 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func btnAddItem(_ sender: UIButton) {
+    }
+    
     /*
     // MARK: - Navigation
 
