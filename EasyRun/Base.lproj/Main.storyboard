@@ -53,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="2144.8000000000002" y="-1278.7106446776613"/>
         </scene>
-        <!--Second Table View Controller-->
+        <!--App List-->
         <scene sceneID="mNm-OH-Jdu">
             <objects>
-                <tableViewController id="iAy-6t-mtI" customClass="SecondTableViewController" customModule="EasyRun" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="App List" id="iAy-6t-mtI" customClass="SecondTableViewController" customModule="EasyRun" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vGb-vr-xt1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,6 +69,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="RKK-nj-UbE" kind="show" id="Nf7-tM-lV3"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -81,7 +84,7 @@
             </objects>
             <point key="canvasLocation" x="4798" y="-917"/>
         </scene>
-        <!--Main View-->
+        <!--Saved Patterns-->
         <scene sceneID="N7y-xC-WEV">
             <objects>
                 <tableViewController restorationIdentifier="SecondVC" storyboardIdentifier="SecondVC" id="IfW-k2-855" customClass="TableViewController" customModule="EasyRun" customModuleProvider="target" sceneMemberID="viewController">
@@ -105,7 +108,7 @@
                             <outlet property="delegate" destination="IfW-k2-855" id="C8B-SE-dSN"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Main View" id="y5V-xL-YjH">
+                    <navigationItem key="navigationItem" title="Saved Patterns" id="y5V-xL-YjH">
                         <barButtonItem key="leftBarButtonItem" systemItem="edit" id="kMt-EA-QNK"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="CTa-ka-Yyq">
                             <connections>
@@ -130,7 +133,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="abf-cA-fbG">
-                                <rect key="frame" x="5" y="70" width="365" height="587"/>
+                                <rect key="frame" x="5" y="114" width="365" height="494"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
