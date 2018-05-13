@@ -1,10 +1,5 @@
 # EasyRun
+180513 - Homebrew 다운
+       - Carthage 다운
+       - 
 
-< UI/UX >
-1. Run the other apps on Easy Run is possible?
-
-
-
-
-
-< CNN Model >
